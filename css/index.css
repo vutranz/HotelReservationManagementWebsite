@@ -1,0 +1,72 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+
+
+.img-hand {
+  height: 160px;
+}
+
+.input-search {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  background-color: #f8f7f9;
+  padding: 20px;
+  margin-bottom: 30px;;
+  align-items: center;
+}
+
+.input-search .form-group {
+  margin: 0;
+  align-items: center;
+}
+
+.input-search input[type='submit'] {
+  align-self: center;
+  outline: none;
+  border: unset;
+  background-color: #616161;
+  padding: 10px 20px ;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.input-search input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+.list-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.a {
+  display: inline-block !important;
+  font-size: 25px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+/* Begin : Search */
+
+/* End: Search */

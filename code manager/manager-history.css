@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #27c7df;
+    --primary-color2: #0074a2;
+    --background-blue: #d9edf7;
+    --background-black: #262729;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Begin: header */
+header {
+    background-color: var(--background-black) ;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.headerBox {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    color: #fff;
+}
+
+.headerBox__logo{
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+
+.nameHotel {
+    margin-left: 10px;
+    font-weight: 600; 
+}
+
+.nameHotel span {
+    color: var(--primary-color); 
+}
+
+.headerCtrl {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headerCtrl > a{
+    margin-left:20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.headerCtrl > a:hover {
+    color: var(--primary-color);
+}
+
+.logout {
+    margin-left: 50px;
+}
+
+.logout:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* End: header */
+
+/* Begin: Category */
+.icon-menu {
+    align-self: center;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.icon-menu:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.category {
+    position: fixed;
+    background-color: var(--background-black);
+    color: #fff;
+    left: 0;
+    padding: 10px 20px 20px 20px;
+    transform: translateX(-100%);
+    transition: 0.2s;
+}
+
+.icon-left {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.icon-left:hover {
+    color: #ccc;
+}
+
+.admin-status {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.icon-person {
+    color: var(--background-black);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.status {
+    margin-left: 20px;
+    margin-top:5px;
+    margin-right: auto;
+}
+
+.icon-status {
+    color: green;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.icon-status span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.category > a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    border-left: 4px solid var(--background-black);
+    transition: 0.15s;
+}
+
+.category > a:hover {
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Add item */
+.add {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: rgb(3, 155, 3);    
+    color: #fff;
+    margin-left: 50px;
+    border-radius: 3px;
+}
+
+
+.add:hover {
+    background-color: rgb(7, 126, 7);
+}
+/* Begin: render */
+
+.render {
+    margin: 50px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+}
+.render table {
+    width: 100%;
+}
+
+
+
+th, td,tr {
+    word-wrap:break-word;
+}
+
+th {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+td { 
+    font-size: 16px;
+}
+
+.id, .name-acc, .last-name, .first-name , .birth-day , .sex, .age, .hand {
+    height: 100px;
+}
+
+
+.hand {
+    
+    text-align: center;
+
+}
+
+.edit > i {
+    display: inline-block;
+    font-size: 20px;
+    color: #999;
+    position: relative;
+    
+    padding: 0px 5px;
+}
+
+.delete > i {
+    display: inline-block;
+    font-size: 20px;
+    color: #999;
+    padding: 0px 5px;
+}
+
+.edit, .delete {
+    color: var(--primary-color);
+    padding: 0px 5px;
+    font-weight: 500;
+}
+
+.edit:hover i, .edit:hover {
+    color: green
+}
+
+.delete:hover , .delete:hover i {
+    color: rgb(182, 11, 11);
+}
+
+/* End: render */
+
+/* End: Category */
